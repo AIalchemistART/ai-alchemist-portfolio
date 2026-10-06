@@ -263,16 +263,17 @@
       "name": "Listing Tool",
       "group": 3,
       "group_title": "AI Tools for Small Business",
-      "description": "AI listing automation for vintage clothing: hanger shots in, a structured spec, staged images and an eBay-ready listing out.",
+      "description": "AI listing automation for vintage clothing: hanger shots in, a structured spec, staged images and an eBay-ready listing out. Visitors can try the interactive demo; the live app is private.",
       "repo": "listing-tool",
       "repo_url": "https://github.com/AIalchemistART/listing-tool",
       "repo_public": false,
-      "live_url": "https://listing-tool.netlify.app",
+      "live_url": null,
+      "demo_url": "/demo/",
       "screenshots": [
         "assets/shots/listing-tool-1.webp",
         "assets/shots/listing-tool-2.webp"
       ],
-      "status": "Live (content matches README)",
+      "status": "Interactive demo on this portfolio; live app is private",
       "stack": "Next.js · Prisma · OpenAI · eBay API"
     },
     {
