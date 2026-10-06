@@ -104,6 +104,20 @@ a{color:inherit}
 .quote::after{margin:22px auto 0}
 .quote cite{display:block;margin-top:14px;font:500 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;font-style:normal;color:var(--faint)}
 
+/* ---------- featured spotlight ---------- */
+.featured{padding:110px 0 20px;--accent:var(--gold);--accent-2:var(--violet)}
+.featured::before{content:"";position:absolute;inset:-80px 0 auto;height:760px;z-index:-1;pointer-events:none;
+  background:radial-gradient(680px 320px at 18% 28%,color-mix(in srgb,var(--gold) 18%,transparent),transparent 70%),radial-gradient(520px 280px at 90% 72%,color-mix(in srgb,var(--violet) 16%,transparent),transparent 70%)}
+.feat-detail{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:22px;margin:22px auto 0;max-width:1080px}
+.feat-detail p{margin:0;color:var(--muted)}
+.feat-status{display:inline-block;margin-bottom:12px;font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-2);border:1px solid color-mix(in srgb,var(--gold) 55%,transparent);border-radius:999px;padding:8px 12px;background:rgba(217,180,106,.08)}
+.feat-detail .stack{margin-top:16px}
+.feat-detail .links{margin-top:16px}
+.shots.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px;aspect-ratio:auto;background:transparent;border:0;cursor:zoom-in}
+.shots.pair img{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:16/10;opacity:1;border-radius:12px;object-fit:cover;object-position:top center}
+.shots.pair img+img{opacity:1}
+.shots.pair:hover img{transform:scale(1.02)}
+
 /* ---------- section heads ---------- */
 section{position:relative}
 .sec{padding:110px 0 30px}
@@ -208,6 +222,7 @@ dialog.lb button{font:600 13px/1 var(--sans);color:var(--text);background:rgba(2
   .index{grid-template-columns:repeat(3,1fr)}
   .pillars{grid-template-columns:1fr}
   .contact-card{grid-template-columns:1fr}
+  .feat-detail{grid-template-columns:1fr;max-width:none}
 }
 @media (max-width:1080px) and (min-width:761px){.cards{grid-template-columns:repeat(2,1fr)}.card,.card:nth-child(n+4){grid-column:span 1}.card:last-child{grid-column:1/-1}.card:last-child .shots,.card:last-child .ph{aspect-ratio:21/9}}
 @media (max-width:760px){
@@ -221,6 +236,8 @@ dialog.lb button{font:600 13px/1 var(--sans);color:var(--text);background:rgba(2
   .stats{grid-template-columns:repeat(2,1fr);gap:10px;margin-top:36px}
   .index{grid-template-columns:repeat(2,1fr)}
   .index .idx:last-child{grid-column:1/-1}
+  .featured{padding-top:90px}
+  .shots.pair{grid-template-columns:1fr}
   .sec-head{display:block}.sec-head p{margin-top:10px}
   .ch-head{grid-template-columns:1fr;gap:14px}
   .ch-mark{width:64px;height:64px}.ch-mark svg{width:40px;height:40px}

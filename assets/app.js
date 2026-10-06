@@ -11,12 +11,15 @@ const vids=[...document.querySelectorAll('video')];vids.forEach(v=>v.addEventLis
 const lb=document.querySelector('dialog.lb'),lbImg=lb.querySelector('img'),lbCap=lb.querySelector('.cap');let cur=null,idx=0;
 function show(i){const imgs=cur.querySelectorAll('img');idx=(i+imgs.length)%imgs.length;lbImg.src=imgs[idx].src;lbImg.alt=imgs[idx].alt;lbCap.textContent=imgs[idx].alt}
 document.querySelectorAll('.shots').forEach(s=>{
+  const imgs=[...s.querySelectorAll('img')];
   const dots=[...s.querySelectorAll('.dots button')];
-  const set=i=>{s.classList.toggle('alt',i===1);dots.forEach((d,j)=>d.setAttribute('aria-pressed',String(i===j)))};
+  const pair=s.classList.contains('pair');
+  const set=i=>{if(pair)return;s.classList.toggle('alt',i===1);dots.forEach((d,j)=>d.setAttribute('aria-pressed',String(i===j)))};
   dots.forEach((d,j)=>d.addEventListener('click',e=>{e.stopPropagation();set(j)}));
-  s.addEventListener('mouseenter',()=>set(1));s.addEventListener('mouseleave',()=>set(0));
-  const open=()=>{cur=s;show(s.classList.contains('alt')?1:0);lb.showModal()};
-  s.addEventListener('click',open);s.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+  if(!pair){s.addEventListener('mouseenter',()=>set(1));s.addEventListener('mouseleave',()=>set(0))}
+  const open=i=>{cur=s;show(typeof i==='number'?i:(s.classList.contains('alt')?1:0));lb.showModal()};
+  s.addEventListener('click',()=>open());s.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+  if(pair)imgs.forEach((img,i)=>img.addEventListener('click',e=>{e.stopPropagation();open(i)}));
 });
 lb.querySelector('[data-prev]').addEventListener('click',()=>show(idx-1));
 lb.querySelector('[data-next]').addEventListener('click',()=>show(idx+1));
