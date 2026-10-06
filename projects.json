@@ -167,7 +167,7 @@
         "assets/shots/mneme-1.webp",
         "assets/shots/mneme-2.webp"
       ],
-      "status": "Live on Netlify; getmneme.com still has a certificate mismatch",
+      "status": "Live on Netlify. getmneme.com is not the live app: the certificate does not match and the host returns a Netlify 404.",
       "stack": "Next.js · Supabase · MCP",
       "badges": []
     },
@@ -299,7 +299,7 @@
       "repo_url": "https://github.com/AIalchemistART/listing-tool",
       "repo_public": false,
       "live_url": null,
-      "demo_url": "/demo/",
+      "demo_url": "/listing-demo/",
       "screenshots": [
         "assets/shots/listing-tool-1.webp",
         "assets/shots/listing-tool-2.webp"
