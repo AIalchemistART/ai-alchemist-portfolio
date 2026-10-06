@@ -52,7 +52,8 @@
         "assets/shots/aria-404-2.webp"
       ],
       "status": "Steam store page",
-      "stack": "React · Electron · Steamworks"
+      "stack": "React · Electron · Steamworks",
+      "badges": []
     },
     {
       "id": "neon-requiem",
@@ -69,7 +70,8 @@
         "assets/shots/neon-requiem-2.webp"
       ],
       "status": "Documented URL neon-requiem.netlify.app returns 404; GitHub Pages build (repo has Pages enabled) is live and used instead",
-      "stack": "Vanilla JS · Canvas · Web Audio"
+      "stack": "Vanilla JS · Canvas · Web Audio",
+      "badges": []
     },
     {
       "id": "vibeverse-arcade",
@@ -86,7 +88,8 @@
         "assets/shots/vibeverse-arcade-2.webp"
       ],
       "status": "Live (redirects to GitHub Pages)",
-      "stack": "Vanilla JS · Isometric Canvas"
+      "stack": "Vanilla JS · Isometric Canvas",
+      "badges": []
     },
     {
       "id": "synthpocalypse",
@@ -103,7 +106,10 @@
         "assets/shots/synthpocalypse-2.webp"
       ],
       "status": "Live (GitHub Pages)",
-      "stack": "Three.js · LRC timing"
+      "stack": "Three.js · LRC timing",
+      "badges": [
+        "half-baked"
+      ]
     },
     {
       "id": "loose-threads",
@@ -120,7 +126,8 @@
         "assets/shots/loose-threads-2.webp"
       ],
       "status": "Live (loosethreadsint.netlify.app; older loosethreads.netlify.app was an unrelated site)",
-      "stack": "React · Vite · Tailwind"
+      "stack": "React · Vite · Tailwind",
+      "badges": []
     },
     {
       "id": "scms",
@@ -137,7 +144,10 @@
         "assets/shots/scms-2.webp"
       ],
       "status": "Public GitHub repo (the documented 'live' home); screenshots are of the repo page",
-      "stack": "Node · Markdown memory · Electron"
+      "stack": "Node · Markdown memory · Electron",
+      "badges": [
+        "open-source"
+      ]
     },
     {
       "id": "mneme",
@@ -154,7 +164,8 @@
         "assets/shots/mneme-2.webp"
       ],
       "status": "Live on Netlify; getmneme.com still has a certificate mismatch",
-      "stack": "Next.js · Supabase · MCP"
+      "stack": "Next.js · Supabase · MCP",
+      "badges": []
     },
     {
       "id": "parl-ai",
@@ -171,7 +182,10 @@
         "assets/shots/parl-ai-2.webp"
       ],
       "status": "Live (repo homepage field)",
-      "stack": "Next.js · Prisma · Gemini"
+      "stack": "Next.js · Prisma · Gemini",
+      "badges": [
+        "half-baked"
+      ]
     },
     {
       "id": "answr",
@@ -188,7 +202,10 @@
         "assets/shots/answr-2.webp"
       ],
       "status": "No public URL; screenshots from local app UI with personal data replaced by fictional placeholders",
-      "stack": "Next.js · Telnyx · Whisper · ElevenLabs"
+      "stack": "Next.js · Telnyx · Whisper · ElevenLabs",
+      "badges": [
+        "half-baked"
+      ]
     },
     {
       "id": "call-flow-sim",
@@ -205,7 +222,8 @@
         "assets/shots/call-flow-sim-2.webp"
       ],
       "status": "Local simulation dashboard screenshots (Workflows + Scenario Lab); no public website",
-      "stack": "TypeScript · Gemini · YAML"
+      "stack": "TypeScript · Gemini · YAML",
+      "badges": []
     },
     {
       "id": "snappy-crm",
@@ -222,7 +240,10 @@
         "assets/shots/snappy-crm-2.webp"
       ],
       "status": "Live (site links to the AIalchemistART/snappy-crm releases)",
-      "stack": "Next.js · Electron · Prisma · Telnyx"
+      "stack": "Next.js · Electron · Prisma · Telnyx",
+      "badges": [
+        "half-baked"
+      ]
     },
     {
       "id": "booksmaster",
@@ -239,7 +260,10 @@
         "assets/shots/booksmaster-2.webp"
       ],
       "status": "Live (repo homepage field; booksmaster.netlify.app also works)",
-      "stack": "Next.js · Electron · Gemini Vision"
+      "stack": "Next.js · Electron · Gemini Vision",
+      "badges": [
+        "open-source"
+      ]
     },
     {
       "id": "smart-contact-parser",
@@ -256,7 +280,10 @@
         "assets/shots/smart-contact-parser-2.webp"
       ],
       "status": "Live (matched by repo name and content; repo has netlify.toml)",
-      "stack": "Next.js · React 19 · OpenAI"
+      "stack": "Next.js · React 19 · OpenAI",
+      "badges": [
+        "open-source"
+      ]
     },
     {
       "id": "listing-tool",
@@ -274,7 +301,8 @@
         "assets/shots/listing-tool-2.webp"
       ],
       "status": "Interactive demo on this portfolio; live app is private",
-      "stack": "Next.js · Prisma · OpenAI · eBay API"
+      "stack": "Next.js · Prisma · OpenAI · eBay API",
+      "badges": []
     },
     {
       "id": "outreach-gen",
@@ -291,7 +319,8 @@
         "assets/shots/outreach-gen-2.webp"
       ],
       "status": "No public URL; portfolio mockups for fictional businesses (pipeline + before/after redesign)",
-      "stack": "Python · ElevenLabs · Gmail API"
+      "stack": "Python · ElevenLabs · Gmail API",
+      "badges": []
     },
     {
       "id": "livelens",
@@ -308,7 +337,8 @@
         "assets/shots/livelens-2.webp"
       ],
       "status": "Live public preview (Netlify; content matches repo website/)",
-      "stack": "C# · WPF · Direct3D · React"
+      "stack": "C# · WPF · Direct3D · React",
+      "badges": []
     },
     {
       "id": "vanitas",
@@ -325,7 +355,8 @@
         "assets/shots/vanitas-2.webp"
       ],
       "status": "Live",
-      "stack": "Next.js · Tailwind · OpenAI Images"
+      "stack": "Next.js · Tailwind · OpenAI Images",
+      "badges": []
     },
     {
       "id": "funky-academic",
@@ -342,7 +373,10 @@
         "assets/shots/funky-academic-2.webp"
       ],
       "status": "Live",
-      "stack": "Astro · Tailwind · MiniSearch"
+      "stack": "Astro · Tailwind · MiniSearch",
+      "badges": [
+        "private-client"
+      ]
     },
     {
       "id": "cut-theory-ai",
@@ -359,7 +393,10 @@
         "assets/shots/cut-theory-ai-2.webp"
       ],
       "status": "Live (Netlify name matches README)",
-      "stack": "Expo · Supabase · OpenAI Images"
+      "stack": "Expo · Supabase · OpenAI Images",
+      "badges": [
+        "half-baked"
+      ]
     },
     {
       "id": "mbc",
@@ -376,7 +413,8 @@
         "assets/shots/mbc-2.webp"
       ],
       "status": "Google Play Store listing (AI Alchemist); store page screenshots, not invented app UI",
-      "stack": "Node · Express · AI"
+      "stack": "Node · Express · AI",
+      "badges": []
     },
     {
       "id": "clarity-systems",
@@ -393,7 +431,8 @@
         "assets/shots/clarity-systems-2.webp"
       ],
       "status": "Live on Netlify; canonical claritysystems.io doesn't resolve and www.claritysystems.io shows an unrelated product",
-      "stack": "Next.js 16 · Tailwind 4 · Netlify"
+      "stack": "Next.js 16 · Tailwind 4 · Netlify",
+      "badges": []
     },
     {
       "id": "ingenuity",
@@ -410,7 +449,10 @@
         "assets/shots/ingenuity-2.webp"
       ],
       "status": "Live (public pages only; client portal not captured)",
-      "stack": "React · Vite · Netlify Functions · Gemini"
+      "stack": "React · Vite · Netlify Functions · Gemini",
+      "badges": [
+        "private-client"
+      ]
     },
     {
       "id": "big-als",
@@ -427,7 +469,10 @@
         "assets/shots/big-als-2.webp"
       ],
       "status": "Live (guest menu only; staff restock tab not captured)",
-      "stack": "Vanilla JS PWA · OpenAI Vision"
+      "stack": "Vanilla JS PWA · OpenAI Vision",
+      "badges": [
+        "private-client"
+      ]
     },
     {
       "id": "dust-permacore",
@@ -444,7 +489,10 @@
         "assets/shots/dust-permacore-2.webp"
       ],
       "status": "Live",
-      "stack": "Next.js 16 · Framer Motion · GSAP"
+      "stack": "Next.js 16 · Framer Motion · GSAP",
+      "badges": [
+        "private-client"
+      ]
     },
     {
       "id": "cardcraft",
@@ -461,7 +509,10 @@
         "assets/shots/cardcraft-2.webp"
       ],
       "status": "Live (footer credits AI Alchemist)",
-      "stack": "Vanilla JS · PWA"
+      "stack": "Vanilla JS · PWA",
+      "badges": [
+        "open-source"
+      ]
     }
   ]
 }
