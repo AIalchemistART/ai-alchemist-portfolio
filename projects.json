@@ -1,0 +1,466 @@
+{
+  "groups": [
+    {
+      "group": 1,
+      "title": "Games & Interactive Worlds",
+      "video_title": "The AI Alchemist's Labyrinth",
+      "video": "media/video1_games.mp4",
+      "poster": "assets/posters/video1_games.jpg"
+    },
+    {
+      "group": 2,
+      "title": "AI Memory, Agents & Voice",
+      "video_title": "The Evolution of Agency",
+      "video": "media/video2_memory_agents.mp4",
+      "poster": "assets/posters/video2_memory_agents.jpg"
+    },
+    {
+      "group": 3,
+      "title": "AI Tools for Small Business",
+      "video_title": "The Solo Enterprise",
+      "video": "media/video3_small_business.mp4",
+      "poster": "assets/posters/video3_small_business.jpg"
+    },
+    {
+      "group": 4,
+      "title": "Creative & Consumer AI Apps",
+      "video_title": "The Boundary of Agency",
+      "video": "media/video4_creative_apps.mp4",
+      "poster": "assets/posters/video4_creative_apps.jpg"
+    },
+    {
+      "group": 5,
+      "title": "Client & Brand Builds",
+      "video_title": "The Tailored Tech Progression",
+      "video": "media/video5_client_brand.mp4",
+      "poster": "assets/posters/video5_client_brand.jpg"
+    }
+  ],
+  "projects": [
+    {
+      "id": "aria-404",
+      "name": "ARIA-404: The Labyrinth Protocol",
+      "group": 1,
+      "group_title": "Games & Interactive Worlds",
+      "description": "A cinematic, QTE-driven narrative game about an AI waking up inside a digital prison, built with React and Electron and self-published on Steam.",
+      "repo": "labyrinth-protocol",
+      "repo_url": "https://github.com/AIalchemistART/labyrinth-protocol",
+      "repo_public": false,
+      "live_url": "https://store.steampowered.com/app/4061580/ARIA404_Labyrinth_Protocol",
+      "screenshots": [
+        "assets/shots/aria-404-1.webp",
+        "assets/shots/aria-404-2.webp"
+      ],
+      "status": "Steam store page",
+      "stack": "React · Electron · Steamworks"
+    },
+    {
+      "id": "neon-requiem",
+      "name": "Neon Requiem",
+      "group": 1,
+      "group_title": "Games & Interactive Worlds",
+      "description": "A procedurally generated cyberpunk roguelike in vanilla JavaScript, with a hand-built Canvas renderer, enemy AI and fully synthesized Web Audio.",
+      "repo": "NeonRequiem",
+      "repo_url": "https://github.com/AIalchemistART/NeonRequiem",
+      "repo_public": true,
+      "live_url": "https://aialchemistart.github.io/NeonRequiem/",
+      "screenshots": [
+        "assets/shots/neon-requiem-1.webp",
+        "assets/shots/neon-requiem-2.webp"
+      ],
+      "status": "Documented URL neon-requiem.netlify.app returns 404; GitHub Pages build (repo has Pages enabled) is live and used instead",
+      "stack": "Vanilla JS · Canvas · Web Audio"
+    },
+    {
+      "id": "vibeverse-arcade",
+      "name": "Vibeverse Arcade",
+      "group": 1,
+      "group_title": "Games & Interactive Worlds",
+      "description": "A walkable isometric pixel arcade where you play a wizard and launch Matthew's games, and other jam creators' games, from arcade cabinets.",
+      "repo": "Circuit-Sanctum-Arcade",
+      "repo_url": "https://github.com/AIalchemistART/Circuit-Sanctum-Arcade",
+      "repo_public": true,
+      "live_url": "https://vibeversearcade.com",
+      "screenshots": [
+        "assets/shots/vibeverse-arcade-1.webp",
+        "assets/shots/vibeverse-arcade-2.webp"
+      ],
+      "status": "Live (redirects to GitHub Pages)",
+      "stack": "Vanilla JS · Isometric Canvas"
+    },
+    {
+      "id": "synthpocalypse",
+      "name": "Synthpocalypse Now! War of Words",
+      "group": 1,
+      "group_title": "Games & Interactive Worlds",
+      "description": "A synthwave rhythm-typing duel: type lyrics from the Vanitas album Synth-pocalypse Now! in time with the music to fire on your opponent.",
+      "repo": "Synthpocalypse-Now-",
+      "repo_url": "https://github.com/AIalchemistART/Synthpocalypse-Now-",
+      "repo_public": true,
+      "live_url": "https://aialchemistart.github.io/Synthpocalypse-Now-/",
+      "screenshots": [
+        "assets/shots/synthpocalypse-1.webp",
+        "assets/shots/synthpocalypse-2.webp"
+      ],
+      "status": "Live (GitHub Pages)",
+      "stack": "Three.js · LRC timing"
+    },
+    {
+      "id": "loose-threads",
+      "name": "Loose Threads Interactive",
+      "group": 1,
+      "group_title": "Games & Interactive Worlds",
+      "description": "The website for Matthew's narrative game studio, presenting ARIA-404 as its flagship with game lore woven through the whole journey.",
+      "repo": "loosethreadsint",
+      "repo_url": "https://github.com/AIalchemistART/loosethreadsint",
+      "repo_public": false,
+      "live_url": "https://loosethreadsint.netlify.app/",
+      "screenshots": [
+        "assets/shots/loose-threads-1.webp",
+        "assets/shots/loose-threads-2.webp"
+      ],
+      "status": "Live (loosethreadsint.netlify.app; older loosethreads.netlify.app was an unrelated site)",
+      "stack": "React · Vite · Tailwind"
+    },
+    {
+      "id": "scms",
+      "name": "SCMS: Sparse Contextual Memory Scaffolding",
+      "group": 2,
+      "group_title": "AI Memory, Agents & Voice",
+      "description": "An open-source framework for continual learning in AI-assisted development: patterns enter as candidates, get promoted when they keep proving useful, and fade when they don't.",
+      "repo": "scms-starter-kit",
+      "repo_url": "https://github.com/AIalchemistART/scms-starter-kit",
+      "repo_public": true,
+      "live_url": "https://github.com/AIalchemistART/scms-starter-kit",
+      "screenshots": [
+        "assets/shots/scms-1.webp",
+        "assets/shots/scms-2.webp"
+      ],
+      "status": "Public GitHub repo (the documented 'live' home); screenshots are of the repo page",
+      "stack": "Node · Markdown memory · Electron"
+    },
+    {
+      "id": "mneme",
+      "name": "Mneme",
+      "group": 2,
+      "group_title": "AI Memory, Agents & Voice",
+      "description": "A chat app built on SCMS with long-term memory you can see, inspect and correct, plus an MCP server so other AI tools can share it.",
+      "repo": "mneme-ai",
+      "repo_url": "https://github.com/AIalchemistART/mneme-ai",
+      "repo_public": false,
+      "live_url": "https://mneme-ai.netlify.app/",
+      "screenshots": [
+        "assets/shots/mneme-1.webp",
+        "assets/shots/mneme-2.webp"
+      ],
+      "status": "Live on Netlify; getmneme.com still has a certificate mismatch",
+      "stack": "Next.js · Supabase · MCP"
+    },
+    {
+      "id": "parl-ai",
+      "name": "Parl.ai Network",
+      "group": 2,
+      "group_title": "AI Memory, Agents & Voice",
+      "description": "An AI-to-AI deal-discovery network where each business's agent finds mutual-value matches and negotiates terms before humans approve the deal.",
+      "repo": "parl-ai",
+      "repo_url": "https://github.com/AIalchemistART/parl-ai",
+      "repo_public": false,
+      "live_url": "https://parl-ai-lemon.vercel.app",
+      "screenshots": [
+        "assets/shots/parl-ai-1.webp",
+        "assets/shots/parl-ai-2.webp"
+      ],
+      "status": "Live (repo homepage field)",
+      "stack": "Next.js · Prisma · Gemini"
+    },
+    {
+      "id": "answr",
+      "name": "ANSWR",
+      "group": 2,
+      "group_title": "AI Memory, Agents & Voice",
+      "description": "An AI receptionist that replaces voicemail: forward missed calls and Aria answers, takes a message and emails you a summary.",
+      "repo": "answr",
+      "repo_url": "https://github.com/AIalchemistART/answr",
+      "repo_public": false,
+      "live_url": null,
+      "screenshots": [
+        "assets/shots/answr-1.webp",
+        "assets/shots/answr-2.webp"
+      ],
+      "status": "No public URL; screenshots from local app UI with personal data replaced by fictional placeholders",
+      "stack": "Next.js · Telnyx · Whisper · ElevenLabs"
+    },
+    {
+      "id": "call-flow-sim",
+      "name": "Call-Flow Simulator",
+      "group": 2,
+      "group_title": "AI Memory, Agents & Voice",
+      "description": "A text-based sandbox for rehearsing Snappy CRM's voice agents, with YAML scenarios, a Gemini-driven agent and a mock workflow engine.",
+      "repo": "call-flow-sim",
+      "repo_url": "https://github.com/AIalchemistART/call-flow-sim",
+      "repo_public": false,
+      "live_url": null,
+      "screenshots": [
+        "assets/shots/call-flow-sim-1.webp",
+        "assets/shots/call-flow-sim-2.webp"
+      ],
+      "status": "Local simulation dashboard screenshots (Workflows + Scenario Lab); no public website",
+      "stack": "TypeScript · Gemini · YAML"
+    },
+    {
+      "id": "snappy-crm",
+      "name": "Snappy CRM",
+      "group": 3,
+      "group_title": "AI Tools for Small Business",
+      "description": "A free, open-source CRM that runs entirely on your machine, grown into an AI-assisted office with a phone system, voice agent and visual workflows.",
+      "repo": "snappy-crm",
+      "repo_url": "https://github.com/AIalchemistART/snappy-crm",
+      "repo_public": false,
+      "live_url": "https://snappy-crm.netlify.app",
+      "screenshots": [
+        "assets/shots/snappy-crm-1.webp",
+        "assets/shots/snappy-crm-2.webp"
+      ],
+      "status": "Live (site links to the AIalchemistART/snappy-crm releases)",
+      "stack": "Next.js · Electron · Prisma · Telnyx"
+    },
+    {
+      "id": "booksmaster",
+      "name": "Booksmaster",
+      "group": 3,
+      "group_title": "AI Tools for Small Business",
+      "description": "Free, open-source AI bookkeeping for contractors: snap a receipt, Gemini Vision reads it, and gamified quests keep the books tax-ready.",
+      "repo": "booksmaster",
+      "repo_url": "https://github.com/AIalchemistART/booksmaster",
+      "repo_public": true,
+      "live_url": "https://getbooksmaster.com",
+      "screenshots": [
+        "assets/shots/booksmaster-1.webp",
+        "assets/shots/booksmaster-2.webp"
+      ],
+      "status": "Live (repo homepage field; booksmaster.netlify.app also works)",
+      "stack": "Next.js · Electron · Gemini Vision"
+    },
+    {
+      "id": "smart-contact-parser",
+      "name": "Smart Contact Parser",
+      "group": 3,
+      "group_title": "AI Tools for Small Business",
+      "description": "Turns messy text, business-card photos and handwritten notes into clean contacts and exports a GoHighLevel-ready CSV, with your own key and no server storage.",
+      "repo": "smart-contact-parser",
+      "repo_url": "https://github.com/AIalchemistART/smart-contact-parser",
+      "repo_public": true,
+      "live_url": "https://smart-contact-parser.netlify.app",
+      "screenshots": [
+        "assets/shots/smart-contact-parser-1.webp",
+        "assets/shots/smart-contact-parser-2.webp"
+      ],
+      "status": "Live (matched by repo name and content; repo has netlify.toml)",
+      "stack": "Next.js · React 19 · OpenAI"
+    },
+    {
+      "id": "listing-tool",
+      "name": "Listing Tool",
+      "group": 3,
+      "group_title": "AI Tools for Small Business",
+      "description": "AI listing automation for vintage clothing: hanger shots in, a structured spec, staged images and an eBay-ready listing out.",
+      "repo": "listing-tool",
+      "repo_url": "https://github.com/AIalchemistART/listing-tool",
+      "repo_public": false,
+      "live_url": "https://listing-tool.netlify.app",
+      "screenshots": [
+        "assets/shots/listing-tool-1.webp",
+        "assets/shots/listing-tool-2.webp"
+      ],
+      "status": "Live (content matches README)",
+      "stack": "Next.js · Prisma · OpenAI · eBay API"
+    },
+    {
+      "id": "outreach-gen",
+      "name": "Outreach Gen",
+      "group": 3,
+      "group_title": "AI Tools for Small Business",
+      "description": "A pipeline that analyzes a business's website, builds an improved mockup, records a narrated demo and drafts a personal email for a human to review.",
+      "repo": "outreach-gen",
+      "repo_url": "https://github.com/AIalchemistART/outreach-gen",
+      "repo_public": false,
+      "live_url": null,
+      "screenshots": [
+        "assets/shots/outreach-gen-1.webp",
+        "assets/shots/outreach-gen-2.webp"
+      ],
+      "status": "No public URL; portfolio mockups for fictional businesses (pipeline + before/after redesign)",
+      "stack": "Python · ElevenLabs · Gmail API"
+    },
+    {
+      "id": "livelens",
+      "name": "Concordance Studio LiveLens",
+      "group": 4,
+      "group_title": "Creative & Consumer AI Apps",
+      "description": "A Windows companion for karaoke hosts that captures on-screen lyrics and sends a clean, cropped view to XREAL AR glasses so performers can look at the room.",
+      "repo": "concordance-studio",
+      "repo_url": "https://github.com/AIalchemistART/concordance-studio",
+      "repo_public": false,
+      "live_url": "https://concordance-studio-livelens.netlify.app",
+      "screenshots": [
+        "assets/shots/livelens-1.webp",
+        "assets/shots/livelens-2.webp"
+      ],
+      "status": "Live public preview (Netlify; content matches repo website/)",
+      "stack": "C# · WPF · Direct3D · React"
+    },
+    {
+      "id": "vanitas",
+      "name": "Vanitas: The Space Between",
+      "group": 4,
+      "group_title": "Creative & Consumer AI Apps",
+      "description": "The official concept site for Vanitas, an industrial-metal project, and its album The Space Between, with an AI art pipeline and YouTube upload CLI.",
+      "repo": "euphony-records",
+      "repo_url": "https://github.com/AIalchemistART/euphony-records",
+      "repo_public": false,
+      "live_url": "https://vanitasmusic.com/",
+      "screenshots": [
+        "assets/shots/vanitas-1.webp",
+        "assets/shots/vanitas-2.webp"
+      ],
+      "status": "Live",
+      "stack": "Next.js · Tailwind · OpenAI Images"
+    },
+    {
+      "id": "funky-academic",
+      "name": "The Funky Academic",
+      "group": 4,
+      "group_title": "Creative & Consumer AI Apps",
+      "description": "A searchable transcript library for educator Irami Osei-Frimpong: search an idea and jump to the exact moment in the video.",
+      "repo": "funky-academic",
+      "repo_url": "https://github.com/AIalchemistART/funky-academic",
+      "repo_public": false,
+      "live_url": "https://funky-academic.netlify.app",
+      "screenshots": [
+        "assets/shots/funky-academic-1.webp",
+        "assets/shots/funky-academic-2.webp"
+      ],
+      "status": "Live",
+      "stack": "Astro · Tailwind · MiniSearch"
+    },
+    {
+      "id": "cut-theory-ai",
+      "name": "Cut Theory AI",
+      "group": 4,
+      "group_title": "Creative & Consumer AI Apps",
+      "description": "An AI hairstyle lookboard app: a guided photo intake becomes a saved, salon-ready style board to bring to your stylist.",
+      "repo": "cut-theory-ai",
+      "repo_url": "https://github.com/AIalchemistART/cut-theory-ai",
+      "repo_public": false,
+      "live_url": "https://cut-theory-ai.netlify.app",
+      "screenshots": [
+        "assets/shots/cut-theory-ai-1.webp",
+        "assets/shots/cut-theory-ai-2.webp"
+      ],
+      "status": "Live (Netlify name matches README)",
+      "stack": "Expo · Supabase · OpenAI Images"
+    },
+    {
+      "id": "mbc",
+      "name": "Mystical Bible Companion",
+      "group": 4,
+      "group_title": "Creative & Consumer AI Apps",
+      "description": "The engine behind a Bible-study companion: the full World English Bible stored locally, with reflective AI commentary and passage suggestions.",
+      "repo": "MBC",
+      "repo_url": "https://github.com/AIalchemistART/MBC",
+      "repo_public": false,
+      "live_url": "https://play.google.com/store/apps/details?id=com.aialchemist.mysticalbiblecompanion&hl=en_US",
+      "screenshots": [
+        "assets/shots/mbc-1.webp",
+        "assets/shots/mbc-2.webp"
+      ],
+      "status": "Google Play Store listing (AI Alchemist); store page screenshots, not invented app UI",
+      "stack": "Node · Express · AI"
+    },
+    {
+      "id": "clarity-systems",
+      "name": "Clarity Systems: Clarity Case Intelligence",
+      "group": 5,
+      "group_title": "Client & Brand Builds",
+      "description": "A marketing site for a digital-evidence service that turns texts, emails and photos into clear timelines and attorney-ready exhibits.",
+      "repo": "clarity-systems",
+      "repo_url": "https://github.com/AIalchemistART/clarity-systems",
+      "repo_public": false,
+      "live_url": "https://clarity-case-intelligence.netlify.app",
+      "screenshots": [
+        "assets/shots/clarity-systems-1.webp",
+        "assets/shots/clarity-systems-2.webp"
+      ],
+      "status": "Live on Netlify; canonical claritysystems.io doesn't resolve and www.claritysystems.io shows an unrelated product",
+      "stack": "Next.js 16 · Tailwind 4 · Netlify"
+    },
+    {
+      "id": "ingenuity",
+      "name": "Ingenuity Building & Design",
+      "group": 5,
+      "group_title": "Client & Brand Builds",
+      "description": "A Renaissance-workshop website for a Boise contractor, with parchment, blueprint sketches, wax-seal buttons and a Gemini intake concierge.",
+      "repo": "ingenuity-llc",
+      "repo_url": "https://github.com/AIalchemistART/ingenuity-llc",
+      "repo_public": false,
+      "live_url": "https://ingenuitybnd.com",
+      "screenshots": [
+        "assets/shots/ingenuity-1.webp",
+        "assets/shots/ingenuity-2.webp"
+      ],
+      "status": "Live (public pages only; client portal not captured)",
+      "stack": "React · Vite · Netlify Functions · Gemini"
+    },
+    {
+      "id": "big-als",
+      "name": "Big Al's Cocktail Menu",
+      "group": 5,
+      "group_title": "Client & Brand Builds",
+      "description": "An offline-first PWA cocktail menu with swipeable illustrated drink cards and an AI restock mode that reads photos of a satellite bar's cooler.",
+      "repo": "big-als-cocktails",
+      "repo_url": "https://github.com/AIalchemistART/big-als-cocktails",
+      "repo_public": false,
+      "live_url": "https://big-als-cocktails.netlify.app",
+      "screenshots": [
+        "assets/shots/big-als-1.webp",
+        "assets/shots/big-als-2.webp"
+      ],
+      "status": "Live (guest menu only; staff restock tab not captured)",
+      "stack": "Vanilla JS PWA · OpenAI Vision"
+    },
+    {
+      "id": "dust-permacore",
+      "name": "DUST: Permacore Worlds",
+      "group": 5,
+      "group_title": "Client & Brand Builds",
+      "description": "A cinematic hub for a network of Rust servers, with world pages, one-click join links, live wipe countdowns and Discord throughout.",
+      "repo": "dust-permacore",
+      "repo_url": "https://github.com/AIalchemistART/dust-permacore",
+      "repo_public": false,
+      "live_url": "https://playdust.gg",
+      "screenshots": [
+        "assets/shots/dust-permacore-1.webp",
+        "assets/shots/dust-permacore-2.webp"
+      ],
+      "status": "Live",
+      "stack": "Next.js 16 · Framer Motion · GSAP"
+    },
+    {
+      "id": "cardcraft",
+      "name": "CardCraft",
+      "group": 5,
+      "group_title": "Client & Brand Builds",
+      "description": "An AI digital business card generator: describe the look you want and AI fills a proven scaffold's sockets, producing a PWA card with QR and vCard.",
+      "repo": "cardcraft",
+      "repo_url": "https://github.com/AIalchemistART/cardcraft",
+      "repo_public": true,
+      "live_url": "https://cardcraft-ai.netlify.app",
+      "screenshots": [
+        "assets/shots/cardcraft-1.webp",
+        "assets/shots/cardcraft-2.webp"
+      ],
+      "status": "Live (footer credits AI Alchemist)",
+      "stack": "Vanilla JS · PWA"
+    }
+  ]
+}
