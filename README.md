@@ -18,3 +18,22 @@ Static HTML/CSS/JS. No build step. Videos and screenshots are local assets under
 
 - `_preview/` is excluded from git and publish (local QA screenshots only).
 - Project metadata lives in `projects.json`.
+
+## Recompress the chapter videos
+
+`tools/compress-videos/compress.mjs` re-encodes clips with ffmpeg for this site. It needs Node 18+ and ffmpeg. There is no npm install.
+
+```bash
+node tools/compress-videos/compress.mjs media --out media-compressed
+```
+
+Defaults: H.264 (CRF 28, `slow` preset, 2500k max rate), AAC (96 kbps mono, 128 kbps stereo), height capped at 720 with no upscale, and `+faststart` so the moov atom sits at the front of the file. On the chapter videos that lands around 8–15 MB per five minutes. Check `media-compressed/`, then replace the files in `media/` when you want them on the site. `index.html` and `projects.json` keep the same paths.
+
+ffmpeg is resolved from `--ffmpeg`, then `FFMPEG_PATH`, then `ffmpeg` on `PATH`. On Windows it also looks for `ffmpeg.exe` on `PATH` and in common install folders. `ffmpeg.dll` is the library next to the program; pass `ffmpeg.exe`:
+
+```powershell
+$env:FFMPEG_PATH = "C:\path\to\ffmpeg.exe"
+node tools/compress-videos/compress.mjs media --out media-compressed
+```
+
+`node tools/compress-videos/compress.mjs --help` lists every flag.
