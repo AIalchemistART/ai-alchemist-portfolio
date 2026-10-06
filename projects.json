@@ -71,7 +71,9 @@
       ],
       "status": "Documented URL neon-requiem.netlify.app returns 404; GitHub Pages build (repo has Pages enabled) is live and used instead",
       "stack": "Vanilla JS · Canvas · Web Audio",
-      "badges": []
+      "badges": [
+        "open-source"
+      ]
     },
     {
       "id": "vibeverse-arcade",
@@ -89,7 +91,9 @@
       ],
       "status": "Live (redirects to GitHub Pages)",
       "stack": "Vanilla JS · Isometric Canvas",
-      "badges": []
+      "badges": [
+        "open-source"
+      ]
     },
     {
       "id": "synthpocalypse",
