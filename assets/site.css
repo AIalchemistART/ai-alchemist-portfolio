@@ -117,6 +117,22 @@ a{color:inherit}
 .shots.pair img{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:16/10;opacity:1;border-radius:12px;object-fit:cover;object-position:top center}
 .shots.pair img+img{opacity:1}
 .shots.pair:hover img{transform:scale(1.02)}
+.live-demo{margin:22px auto 0;width:100%;max-width:1080px;padding:16px 12px 18px}
+.live-demo .eyebrow{display:block;margin:4px 8px 0}
+.live-demo h3{margin:8px 8px 14px;font:600 clamp(28px,3.2vw,40px)/1.12 var(--serif);color:var(--text)}
+.yt-frame{position:relative;aspect-ratio:16/9;border-radius:14px;background:#000}
+.yt-play{position:absolute;inset:0;display:block;width:100%;height:100%;margin:0;padding:0;border:0;border-radius:14px;overflow:hidden;background:#000;cursor:pointer;color:inherit;font:inherit}
+.yt-play picture,.yt-play img{display:block;width:100%;height:100%}
+.yt-play img{object-fit:cover}
+.yt-glyph{position:absolute;left:50%;top:50%;z-index:1;width:74px;height:74px;display:grid;place-items:center;border-radius:50%;color:#1a1405;background:linear-gradient(160deg,#f6e7c1,#d9b46a 42%,#b8883e);border:1px solid rgba(255,255,255,.55);box-shadow:0 12px 34px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.7);transform:translate(-50%,-50%);transition:transform .2s ease,box-shadow .2s ease}
+.yt-glyph svg{width:26px;height:26px;margin-left:3px}
+.yt-play:hover .yt-glyph,.yt-play:focus-visible .yt-glyph{transform:translate(-50%,-50%) scale(1.06);box-shadow:0 16px 40px rgba(0,0,0,.5),0 0 0 8px rgba(217,180,106,.16),inset 0 1px 0 rgba(255,255,255,.7)}
+.yt-play:focus-visible{outline:2px solid var(--gold-2);outline-offset:4px}
+.yt-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:14px;background:#000}
+.live-demo p{margin:14px 8px 0;color:var(--muted);max-width:75ch}
+.live-demo .live-demo-note{margin-top:8px;font-size:12.5px;line-height:1.45;color:var(--faint)}
+.live-demo-fallback{margin-top:10px}
+.live-demo-fallback a{color:var(--gold-2);text-underline-offset:3px}
 
 /* ---------- section heads ---------- */
 section{position:relative}
@@ -269,6 +285,10 @@ dialog.lb button{font:600 13px/1 var(--sans);color:var(--text);background:rgba(2
   .ch-mark{width:64px;height:64px}.ch-mark svg{width:40px;height:40px}
   .chapter{padding-top:90px}
   .player{padding:8px}
+  .live-demo{padding:10px 8px 14px}
+  .live-demo h3{margin-bottom:12px}
+  .yt-glyph{width:60px;height:60px}
+  .yt-glyph svg{width:22px;height:22px}
   .cards{grid-template-columns:1fr}.card,.card:nth-child(n+4){grid-column:auto}.card:nth-child(n+4) .shots,.card:nth-child(n+4) .ph{aspect-ratio:16/10}
   .card-foot{flex-direction:column;align-items:stretch}
   .card-foot .links{flex-basis:auto}
