@@ -3,28 +3,27 @@
   # Rewrites CSS/JS links to ?v=<content hash> so each change is a new URL.
   command = "node tools/stamp-assets.mjs"
 
-# Netlify keeps the first matching header rule. * matches slashes, so the
-# CSS/JS rules have to come before /assets/* or styles stay cached for a week.
-# Unversioned styles and scripts revalidate. Images, fonts, and other files
-# under /assets keep the week-long cache. /media stays immutable.
+# Styles and scripts revalidate. Exact paths: /assets/*.css did not override
+# /assets/* on the CDN, and a splat would still cover these files. Images and
+# fonts keep the week-long cache on their own rules. /media stays immutable.
 
 [[headers]]
-  for = "/assets/*.css"
+  for = "/assets/site.css"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
-  for = "/assets/*.js"
+  for = "/assets/app.js"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
-  for = "/listing-demo/*.css"
+  for = "/listing-demo/demo.css"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
-  for = "/listing-demo/*.js"
+  for = "/listing-demo/demo.js"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
@@ -34,7 +33,37 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/assets/*"
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/shots/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/posters/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/og/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/avatar.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/livelens-live-demo-poster.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/livelens-live-demo-poster.webp"
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
