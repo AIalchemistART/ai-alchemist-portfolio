@@ -61,6 +61,34 @@
 <header class="sec-head rv"><div><div class="eyebrow">Incubator spotlight</div><h2 id="feat-t">Concordance Studio LiveLens</h2></div><p>Karaoke singers lose eye contact staring at monitors. LiveLens captures on-screen lyrics and sends a clean crop to XREAL AR glasses, so performers face the room.</p></header>
 <figure class="player glass rv"><video controls playsinline preload="none" poster="assets/posters/video_featured_livelens.jpg" width="1280" height="720"><source src="media/video_featured_livelens.mp4" type="video/mp4">Your browser can't play this video. <a href="media/video_featured_livelens.mp4">Download it</a>.</video>
 <figcaption><strong>Concordance Studio LiveLens</strong><span class="meta">FEATURED CINEMATIC · WORKING MVP</span></figcaption></figure>
+<figure class="live-demo glass rv" id="livelens-live-demo">
+<div class="eyebrow">Live demo</div>
+<h3>LiveLens in the wild: karaoke night</h3>
+<div class="yt-frame">
+<button type="button" class="yt-play" aria-label="Play LiveLens in the wild: karaoke night">
+<picture><source srcset="assets/livelens-live-demo-poster.webp" type="image/webp"><img src="assets/livelens-live-demo-poster.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></picture>
+<span class="yt-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.5 6.8v10.4L18 12 8.5 6.8z"/></svg></span>
+</button>
+</div>
+<p>Recorded at a live karaoke night. The center panel is the full performance; the left and right panels show the LiveLens glasses view, with lyrics appearing live in the wearer's field of view.</p>
+<p class="live-demo-note">Audio: first ~18 seconds are the original performance (music: Tom Waits, used for demonstration), then a CC0 track, “Dimly lit” by iamoneabe.</p>
+<noscript><p class="live-demo-fallback"><a href="https://youtu.be/M_xY2nhJ6B8">Watch “LiveLens in the wild: karaoke night” on YouTube</a></p></noscript>
+<script>
+(function(){
+  var root=document.getElementById('livelens-live-demo');
+  var btn=root&&root.querySelector('.yt-play');
+  if(!btn)return;
+  btn.addEventListener('click',function(){
+    var iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube-nocookie.com/embed/M_xY2nhJ6B8?autoplay=1&rel=0';
+    iframe.title='LiveLens in the wild: karaoke night';
+    iframe.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+    iframe.setAttribute('allowfullscreen','');
+    btn.replaceWith(iframe);
+  });
+})();
+</script>
+</figure>
 <div class="feat-detail glass rv"><div>
 <p class="feat-status">Working MVP</p>
 <p>The capture-to-glasses path and the KJ wireless wizard are running in this prototype. It is a working MVP, with venue hardening still ahead.</p>
