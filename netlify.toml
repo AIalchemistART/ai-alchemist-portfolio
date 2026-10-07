@@ -11,3 +11,84 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+# Old-site continuity. These are exact paths or path prefixes, so they do not
+# match /listing-demo/ (the Listing Tool demo lives there as a real directory).
+# 200 + force proxies the request; query strings pass through when the rule
+# itself has no query condition.
+
+[[redirects]]
+  from = "https://www.aialchemist.net/"
+  to = "https://aialchemist.net/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.aialchemist.net/*"
+  to = "https://aialchemist.net/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/consult"
+  to = "/#contact"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/#contact"
+  status = 301
+
+[[redirects]]
+  from = "/demo"
+  to = "https://ai-alchemist.netlify.app/demo"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/demo/"
+  to = "https://ai-alchemist.netlify.app/demo/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/demo/*"
+  to = "https://ai-alchemist.netlify.app/demo/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://ai-alchemist.netlify.app/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/unsubscribe"
+  to = "https://ai-alchemist.netlify.app/unsubscribe"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/unsubscribe/*"
+  to = "https://ai-alchemist.netlify.app/unsubscribe/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/admin"
+  to = "https://ai-alchemist.netlify.app/admin"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/admin/*"
+  to = "https://ai-alchemist.netlify.app/admin/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/_next/*"
+  to = "https://ai-alchemist.netlify.app/_next/:splat"
+  status = 200
+  force = true
