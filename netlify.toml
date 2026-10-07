@@ -1,6 +1,32 @@
 [build]
   publish = "."
-  command = "echo 'static site — no build'"
+  # Rewrites CSS/JS links to ?v=<content hash> so each change is a new URL.
+  command = "node tools/stamp-assets.mjs"
+
+# Netlify keeps the first matching header rule. * matches slashes, so the
+# CSS/JS rules have to come before /assets/* or styles stay cached for a week.
+# Unversioned styles and scripts revalidate. Images, fonts, and other files
+# under /assets keep the week-long cache. /media stays immutable.
+
+[[headers]]
+  for = "/assets/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/listing-demo/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/listing-demo/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/media/*"

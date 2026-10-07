@@ -11,7 +11,7 @@ Static HTML/CSS/JS. No build step. Videos and screenshots are local assets under
 ## Deploy
 
 - Publish directory: site root (this folder)
-- Netlify: no build command required
+- Netlify build: `node tools/stamp-assets.mjs` adds a content hash to CSS and JS links
 - Continuous deploys: connected to this GitHub repo when linked
 
 ## Notes

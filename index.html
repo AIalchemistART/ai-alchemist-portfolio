@@ -24,7 +24,16 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/Cormorant.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css">
+<style>
+/* Layout fallback if a cached copy of assets/site.css has no .yt-* rules. The stylesheet link below overrides these when it is current. */
+.yt-frame{position:relative;aspect-ratio:16/9;background:#000}
+.yt-play{position:absolute;inset:0;display:block;width:100%;height:100%;margin:0;padding:0;border:0;overflow:hidden;background:#000;color:inherit}
+.yt-play picture,.yt-play img{display:block;width:100%;height:100%}
+.yt-play img{object-fit:cover}
+.yt-glyph{position:absolute;left:50%;top:50%;width:74px;height:74px;display:grid;place-items:center;transform:translate(-50%,-50%);color:#1a1405}
+.yt-glyph svg{width:26px;height:26px;max-width:26px;max-height:26px}
+</style>
+<link rel="stylesheet" href="assets/site.css?v=02020bb3">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -67,7 +76,7 @@
 <div class="yt-frame">
 <button type="button" class="yt-play" aria-label="Play LiveLens in the wild: karaoke night">
 <picture><source srcset="assets/livelens-live-demo-poster.webp" type="image/webp"><img src="assets/livelens-live-demo-poster.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"></picture>
-<span class="yt-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.5 6.8v10.4L18 12 8.5 6.8z"/></svg></span>
+<span class="yt-glyph" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M8.5 6.8v10.4L18 12 8.5 6.8z"/></svg></span>
 </button>
 </div>
 <p>Recorded at a live karaoke night. The center panel is the full performance; the left and right panels show the LiveLens glasses view, with lyrics appearing live in the wearer's field of view.</p>
@@ -236,6 +245,6 @@
 </main>
 <footer><div class="wrap"><em>“Building useful products at the intersection of AI, software, and creative execution.”</em><ul class="socials"><li><a href="https://github.com/AIalchemistART" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://x.com/aialchemistart" target="_blank" rel="noopener">X</a></li><li><a href="https://www.linkedin.com/in/aialchemistart/" target="_blank" rel="noopener">LinkedIn</a></li></ul><span>© Matthew “Manny” Walker · AI Alchemist</span></div></footer>
 <dialog class="lb" aria-label="Screenshot viewer"><img src="" alt=""><div class="bar"><span class="cap"></span><span><button type="button" data-prev>← Prev</button> <button type="button" data-next>Next →</button> <button type="button" data-close>Close</button></span></div></dialog>
-<script src="assets/app.js" defer></script>
+<script src="assets/app.js?v=fcdcf207" defer></script>
 </body>
 </html>
